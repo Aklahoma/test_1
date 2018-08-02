@@ -1,9 +1,8 @@
 btc = int(input('Введите цену биткоина: '))
-mybtc = btc * 0.016877
+your_btc = float(input('Введите количество Ваше биткоинов: '))
+my_btc = btc * your_btc
 usd = 24.64
-cash = (mybtc * usd) - 5000
-a = mybtc * usd
-b = cash/usd
-print("Общая сумма продажи: ",round(a, 2), "UAH")
-print("Минус вложения: ", round(cash,2),"UAH")
-print("В валюте", round(b,2), 'USD')
+price_sale_btc = my_btc * usd
+price_inUSD = price_sale_btc / usd
+print("Общая сумма продажи: ",round(price_sale_btc, 2), "UAH")
+print("В валюте", round(price_inUSD,2), 'USD')
