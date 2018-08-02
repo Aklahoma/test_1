@@ -1,5 +1,5 @@
 btc = int(input('Введите цену биткоина: '))
-your_btc = float(input('Введите количество Ваше биткоинов: '))
+your_btc = float(input('Введите Ваше количество биткоинов: '))
 my_btc = btc * your_btc
 usd = 24.64
 price_sale_btc = my_btc * usd
